@@ -1,0 +1,94 @@
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+.calculator-container.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calculator-tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calculator-tabs button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.calculator-tabs button.active {
+  background-color: #bbb;
+}
+
+.calculator-main {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.calculator-body {
+  flex-grow: 1;
+  padding-right: 20px;
+  overflow-y: auto;
+}
+
+.calculator-history {
+  width: 300px;
+  overflow-y: auto;
+}
+
+/* Add these styles to your existing CSS files for each calculator type */
+
+.advanced-calculator,
+.integral-calculator,
+.statistical-analysis,
+.matrix-calculator,
+.polynomial-solver,
+.graph-calculator {
+  width: 100%;
+}
+
+.advanced-calculator .button-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.integral-calculator input,
+.statistical-analysis input,
+.matrix-calculator input,
+.polynomial-solver input,
+.graph-calculator input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.result {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.dark .result {
+  background-color: #444;
+}

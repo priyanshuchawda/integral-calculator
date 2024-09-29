@@ -1,0 +1,54 @@
+.ai-tab {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ai-tab.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.ai-tab.dark {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.ai-tab textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.ai-tab button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ai-tab button:hover {
+  background-color: #45a049;
+}
+
+.ai-tab button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.ai-response {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.ai-tab.dark .ai-response {
+  background-color: #444;
+}

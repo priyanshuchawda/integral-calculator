@@ -1,0 +1,23 @@
+.integral-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .integral-calculator input {
+    margin: 10px 0;
+    padding: 5px;
+    width: 300px;
+  }
+  
+  .integral-calculator button {
+    margin: 10px 0;
+    padding: 5px 10px;
+  }
+  
+  .integral-calculator .result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  

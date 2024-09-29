@@ -1,0 +1,36 @@
+.tips {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+.dark .tips {
+  background-color: #2a2a2a;
+}
+
+.tips h3 {
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tips ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.tips li {
+  margin-bottom: 10px;
+}
+
+.tips.expanded {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark .tips.expanded {
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}

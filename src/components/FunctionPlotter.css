@@ -1,0 +1,20 @@
+.critical-points-list {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.critical-points-list h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.critical-points-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.critical-points-list li {
+  margin-bottom: 5px;
+}

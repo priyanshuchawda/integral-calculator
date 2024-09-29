@@ -2,8 +2,12 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders Integral Calculator', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const headerElement = screen.getByText(/Integral Calculator/i);
+  expect(headerElement).toBeInTheDocument();
 });
+// At the top of your integrator.test.ts file
+jest.mock('worker_threads', () => ({
+  Worker: jest.fn()
+}));

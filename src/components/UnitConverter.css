@@ -1,0 +1,30 @@
+.unit-converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .unit-converter input {
+    margin: 10px 0;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .unit-converter button {
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .unit-converter button:hover {
+    background-color: #45a049;
+  }
+  
+  .unit-converter .result {
+    margin-top: 20px;
+    font-weight: bold;
+  }

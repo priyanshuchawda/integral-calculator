@@ -1,0 +1,22 @@
+.derivative-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .derivative-calculator input {
+    margin: 10px 0;
+    padding: 5px;
+    width: 300px;
+  }
+  
+  .derivative-calculator button {
+    margin: 10px 0;
+    padding: 5px 10px;
+  }
+  
+  .derivative-calculator .result {
+    margin-top: 20px;
+    font-weight: bold;
+  }

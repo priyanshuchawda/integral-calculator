@@ -2,6 +2,7 @@
   "name": "integral-calculator",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:your_backend_port",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -10,16 +11,46 @@
     "@types/node": "^16.18.106",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
+    "@types/socket.io-client": "^1.4.36",
+    "@types/three": "^0.167.2",
+    "axios": "^1.7.5",
+    "better-react-mathjax": "^2.0.3",
+    "chart.js": "^4.4.4",
+    "chartjs-plugin-zoom": "^2.0.1",
+    "compromise": "^14.14.0",
+    "firebase": "^10.13.0",
+    "function-plot": "^1.25.0",
+    "i18next": "^23.14.0",
+    "katex": "^0.16.11",
+    "mathjs": "^13.1.1",
+    "natural": "^8.0.1",
+    "nerdamer": "^1.1.13",
+    "openai": "^4.56.1",
+    "plotly.js": "^2.34.0",
+    "plotly.js-dist": "^2.34.0",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-color": "^2.19.3",
     "react-dom": "^18.3.1",
+    "react-firebase-hooks": "^5.1.1",
+    "react-i18next": "^15.0.1",
+    "react-icons": "^5.3.0",
+    "react-katex": "^3.0.1",
+    "react-plotly.js": "^2.6.0",
     "react-scripts": "5.0.1",
+    "react-three-fiber": "^6.0.13",
+    "react-toastify": "^10.0.5",
+    "recharts": "^2.12.7",
+    "socket.io-client": "^4.7.5",
+    "three": "^0.167.1",
     "typescript": "^4.9.5",
+    "uuid": "^10.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,5 +70,27 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(mathjs)/)"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
+    "@types/katex": "^0.16.7",
+    "@types/mathjs": "^9.4.1",
+    "@types/plotly.js": "^2.33.3",
+    "@types/react-color": "^3.0.12",
+    "@types/react-katex": "^3.0.4",
+    "@types/react-plotly.js": "^2.6.3",
+    "@types/uuid": "^10.0.0",
+    "assert": "^2.1.0",
+    "buffer": "^6.0.3",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0"
   }
 }

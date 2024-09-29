@@ -1,0 +1,32 @@
+.special-functions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .function-group {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .special-functions input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .special-functions button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .special-functions button:hover {
+    background-color: #45a049;
+  }

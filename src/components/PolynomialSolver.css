@@ -1,0 +1,52 @@
+.polynomial-solver {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.polynomial-solver h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.polynomial-solver input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.polynomial-solver button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.polynomial-solver button:hover {
+  background-color: #0056b3;
+}
+
+.polynomial-solver .error {
+  color: red;
+  margin-top: 10px;
+}
+
+.polynomial-solver .results {
+  margin-top: 20px;
+}
+
+.polynomial-solver .results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.polynomial-solver .results li {
+  margin-bottom: 5px;
+}

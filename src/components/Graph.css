@@ -1,0 +1,10 @@
+.graph-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.graph-container h3 {
+  margin-bottom: 10px;
+}
